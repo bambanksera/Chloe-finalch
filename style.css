@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  position: relative;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f8bbd0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #ad1457;
+}
+
+.logo {
+  max-height: 60px;
+  margin-top: 20px;
+}
+
+nav.menu-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.btn {
+  background: #ad1457;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #d81b60;
+  transform: translateY(-2px);
+}
+
+main h2 {
+  font-size: 1.8em;
+  color: #880e4f;
+  margin-top: 30px;
+}
+
+main p {
+  line-height: 1.6;
+}
+
+img.main-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  border-top: 1px solid #f8bbd0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  nav.menu-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+}
